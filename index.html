@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const qs = window.location.search;
+      if (!qs.startsWith("?url=")) {
+        return;
+      }
+      const deepLink = qs.substring(5);
+      window.location.href = deepLink;
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
